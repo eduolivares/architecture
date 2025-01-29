@@ -27,6 +27,7 @@ transformers:
 components:
   - ../../lib/networking
   - networking/bgpmetallb
+  - networking/bgpopenstack
   - ../../lib/control-plane
 
 resources:
