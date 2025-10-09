@@ -174,3 +174,13 @@ replacements:
           name: bgpnet-worker-3
         fieldPaths:
           - spec.config
+  - source:
+      kind: ConfigMap
+      name: network-values
+      fieldPath: data.designate.net-attach-def
+    targets:
+      - select:
+          kind: NetworkAttachmentDefinition
+          name: designate
+        fieldPaths:
+          - spec.config
